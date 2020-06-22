@@ -1,0 +1,24 @@
+{
+  "name": "sm-sdk",
+  "version": "1.0.0",
+  "description": "The web monitor SDK",
+  "main": "main.ts",
+  "author": "YanbinKwan",
+  "license": "MIT",
+  "private": "false",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c --environment INCLUDE_DEPS,BUILD:production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
+  }
+}
